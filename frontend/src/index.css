@@ -2,25 +2,140 @@
   margin: 0;
   padding: 0;
 }
-.avatar {
-  vertical-align: middle;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-i{
-  font-size: 40px;
-}
-.navbar-brand{
-  font-size: 25px;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #fff;
+body{
+  background-color: whitesmoke;
 }
 header{
-  background-color: darkcyan;
+  background-color: #133845;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
+.navbar-brand{
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.post_section {
+  top: 50px;
+  position: absolute;
+}
+.post_actions{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
+}
+.post_header div{
+  display: flex;
+  justify-content: space-between;
+}
+.needs-validation{
+  top: 100px;
+  position: absolute;
+}
+.formBx{
+  border-radius: 10px;
+  top: 100px;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+}
+.screen{
+  top: 65px;
+  position: absolute;
+  width: 100%;
+}
+.cover{
+  height: 250px;
+}
+.profile{
+  height: 120px;
+  width: 120px;
+  /* top: 20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute; */
+}
+.post_header div{
+  display: flex;
+  justify-content: space-between;
+}
+.followbtn{
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+}
+.authentication-text{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.authenticationScreen{
+  background-color: blue;
+  height: 100%;
+  min-height: 100vh;
+}
+.form-bx{
+  background-color: white;
+  top: 60px;
+  position: relative;
+  border-radius: 8px;
+}
+.authenticationBtn{
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+}
+div.profIm {
+  text-align: center;
+}
+
+div.profIm img {
+  display: inline-block;
+}
+/*Mobile responsiveness*/
+@media only screen and (max-width: 600px) {
+  header{
+    background-color: white;
+    padding: 10px;
+    /* font-family: sans-serif; */
+    font-weight: 600;
+  }
+  .headerMob{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: blue; */
+    padding: 10;
+    /* color: #fff; */
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+  }
+  .card{
+    width: 100%;
+  }
+  .header{
+    background-color: red;
+    padding: 10;
+  }
+  .post_header div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .authenticationScreen{
+    height: 100vh;
+  }
+}
+/*End mobile responsive*/
