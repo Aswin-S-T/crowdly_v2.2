@@ -89,7 +89,7 @@ function ProfileScreen() {
 												/>
 											</div>
 											<label
-												for="inputEmail3"
+												htmlFor="inputEmail3"
 												className="col-sm-2 col-form-label"
 											>
 												Username
@@ -105,7 +105,7 @@ function ProfileScreen() {
 										</div>
 										<div className="form-group row">
 											<label
-												for="inputPassword3"
+												htmlFor="inputPassword3"
 												className="col-sm-2 col-form-label"
 											>
 												About

@@ -15,7 +15,7 @@ function RegisterScreen() {
 							<h2 className="text-center">Create new Account</h2>
 							<div className="form-row mt-5">
 								<div className="col-md-4 mb-3">
-									<label for="validationCustom01">First name</label>
+									<label htmlFor="validationCustom01">First name</label>
 									<input
 										type="text"
 										className="form-control"
@@ -27,7 +27,7 @@ function RegisterScreen() {
 									<div className="valid-feedback">Looks good!</div>
 								</div>
 								<div className="col-md-4 mb-3">
-									<label for="validationCustom02">Last name</label>
+									<label htmlFor="validationCustom02">Last name</label>
 									<input
 										type="text"
 										className="form-control"
@@ -39,7 +39,7 @@ function RegisterScreen() {
 									<div className="valid-feedback">Looks good!</div>
 								</div>
 								<div className="col-md-4 mb-3">
-									<label for="validationCustomUsername">Username</label>
+									<label htmlFor="validationCustomUsername">Username</label>
 									<div className="input-group">
 										<div className="input-group-prepend">
 											<span className="input-group-text" id="inputGroupPrepend">
@@ -62,7 +62,7 @@ function RegisterScreen() {
 							</div>
 							<div className="form-row">
 								<div className="col-md-6 mb-3">
-									<label for="validationCustom03">City</label>
+									<label htmlFor="validationCustom03">City</label>
 									<input
 										type="text"
 										className="form-control"
@@ -75,7 +75,7 @@ function RegisterScreen() {
 									</div>
 								</div>
 								<div className="col-md-3 mb-3">
-									<label for="validationCustom04">State</label>
+									<label htmlFor="validationCustom04">State</label>
 									<input
 										type="text"
 										className="form-control"
@@ -88,7 +88,7 @@ function RegisterScreen() {
 									</div>
 								</div>
 								<div className="col-md-3 mb-3">
-									<label for="validationCustom05">Zip</label>
+									<label htmlFor="validationCustom05">Zip</label>
 									<input
 										type="text"
 										className="form-control"
@@ -110,7 +110,7 @@ function RegisterScreen() {
 										id="invalidCheck"
 										required
 									/>
-									<label className="form-check-label" for="invalidCheck">
+									<label className="form-check-label" htmlFor="invalidCheck">
 										Agree to terms and conditions
 									</label>
 									<div className="invalid-feedback">

@@ -28,6 +28,7 @@ import ChatScreen from "./screens/ChatScreen";
 import { IconButton, Menu, MenuItem } from "@material-ui/core";
 import LoginScreen from "./screens/LoginScreen";
 import { BrowserRouter } from "react-router-dom";
+import AllUsers from "./screens/AllUsers";
 
 function refreshMessages() {
 	const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
@@ -69,7 +70,9 @@ export default function FixedBottomNavigation() {
 						<HomeScreen />
 					</>
 				) : value == 1 ? (
-					<>1</>
+					<>
+						<AllUsers />
+					</>
 				) : value == 2 ? (
 					<>
 						<ChatScreen />

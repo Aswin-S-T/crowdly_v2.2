@@ -108,7 +108,7 @@ function AddPost() {
 						<div className="modal-body">
 							<form onSubmit={handleSubmitFile}>
 								<div className="form-group">
-									<label for="formGroupExampleInput">Caption</label>
+									<label htmlFor="formGroupExampleInput">Caption</label>
 									<input
 										type="text"
 										className="form-control"
@@ -118,7 +118,7 @@ function AddPost() {
 									/>
 								</div>
 								<div className="form-group">
-									<label for="formGroupExampleInput2">About</label>
+									<label htmlFor="formGroupExampleInput2">About</label>
 									<textarea
 										type="text"
 										className="form-control"

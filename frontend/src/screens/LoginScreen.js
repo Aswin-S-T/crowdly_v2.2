@@ -38,7 +38,7 @@ function LoginScreen() {
 						<div className="form-bx p-4 mt-5">
 							<h1 className="text-center authentication-text">Login here</h1>
 							<form onSubmit={handleLogin}>
-								<label for="exampleInputEmail1">Email address</label>
+								<label htmlFor="exampleInputEmail1">Email address</label>
 								<input
 									type="email"
 									className="form-control"
@@ -47,7 +47,7 @@ function LoginScreen() {
 									placeholder="Enter email"
 									onChange={(e) => setEmail(e.target.value)}
 								/>
-								<label for="exampleInputPassword1">Password</label>
+								<label htmlFor="exampleInputPassword1">Password</label>
 								<input
 									type="password"
 									className="form-control"
