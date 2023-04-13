@@ -87,16 +87,7 @@ export default function FixedBottomNavigation() {
 						<LoginScreen />
 					</>
 				)}
-				{/* <List style={{ top: "100px", position: "absolute" }}>
-				{messages.map(({ primary, secondary, person }, index) => (
-					<ListItem button key={index + person}>
-						<ListItemAvatar>
-							<Avatar alt="Profile Picture" src={person} />
-						</ListItemAvatar>
-						<ListItemText primary={primary} secondary={secondary} />
-					</ListItem>
-				))}
-			</List> */}
+
 				{loggedIn && (
 					<Paper
 						sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
@@ -121,39 +112,9 @@ export default function FixedBottomNavigation() {
 								icon={<NotificationsIcon />}
 							/>
 							<BottomNavigationAction
-								// style={{ border: "none" }}
-								// class="dropdown-toggle"
-								// // type="button"
-								// id="dropdownMenuButton"
-								// data-toggle="dropdown"
-								// aria-haspopup="true"
-								// aria-expanded="false"
 								label="Account"
 								icon={<AccountCircleIcon />}
 							/>
-							{/* <div class="dropdown">
-						<button
-							class="btn btn-secondary dropdown-toggle"
-							type="button"
-							id="dropdownMenuButton"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							Dropdown button
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">
-								Action
-							</a>
-							<a class="dropdown-item" href="#">
-								Another action
-							</a>
-							<a class="dropdown-item" href="#">
-								Something else here
-							</a>
-						</div>
-					</div> */}
 						</BottomNavigation>
 					</Paper>
 				)}

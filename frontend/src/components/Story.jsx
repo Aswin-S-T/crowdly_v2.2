@@ -3,7 +3,7 @@ import React from "react";
 function Story() {
 	return (
 		<div>
-			<div class="scrollmenu">
+			<div className="scrollmenu">
 				<a href="#home">Home</a>
 				<a href="#news">News</a>
 				<a href="#contact">Contact</a>

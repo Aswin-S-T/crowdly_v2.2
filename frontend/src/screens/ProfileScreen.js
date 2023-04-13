@@ -57,60 +57,63 @@ function ProfileScreen() {
 					></i>
 
 					<div
-						class="modal fade"
+						className="modal fade"
 						id="settings"
-						tabindex="-1"
+						tabIndex="-1"
 						role="dialog"
 						aria-labelledby="exampleModalCenterTitle"
 						aria-hidden="true"
 					>
-						<div class="modal-dialog modal-dialog-centered" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLongTitle">
+						<div className="modal-dialog modal-dialog-centered" role="document">
+							<div className="modal-content">
+								<div className="modal-header">
+									<h5 className="modal-title" id="exampleModalLongTitle">
 										Settings
 									</h5>
 									<button
 										type="button"
-										class="close"
+										className="close"
 										data-dismiss="modal"
 										aria-label="Close"
 									>
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modal-body">
+								<div className="modal-body">
 									<form>
-										<div class="form-group ">
+										<div className="form-group ">
 											<div className="profIm">
 												<img
 													src="https://wallpapercave.com/wp/wp7039397.jpg"
 													className="profile rounded-circle"
 												/>
 											</div>
-											<label for="inputEmail3" class="col-sm-2 col-form-label">
+											<label
+												for="inputEmail3"
+												className="col-sm-2 col-form-label"
+											>
 												Username
 											</label>
-											<div class="col-sm-10">
+											<div className="col-sm-10">
 												<input
 													type="email"
-													class="form-control"
+													className="form-control"
 													id="inputEmail3"
 													placeholder="Email"
 												/>
 											</div>
 										</div>
-										<div class="form-group row">
+										<div className="form-group row">
 											<label
 												for="inputPassword3"
-												class="col-sm-2 col-form-label"
+												className="col-sm-2 col-form-label"
 											>
 												About
 											</label>
-											<div class="col-sm-10">
+											<div className="col-sm-10">
 												<textarea
 													type="text"
-													class="form-control"
+													className="form-control"
 													id="inputPassword3"
 													placeholder="About...."
 												/>
@@ -124,9 +127,9 @@ function ProfileScreen() {
 												inputProps={{ "aria-label": "controlled" }}
 											/>
 										</div>
-										<div class="form-group row">
-											<div class="col-sm-10">
-												<button type="submit" class="authenticationBtn">
+										<div className="form-group row">
+											<div className="col-sm-10">
+												<button type="submit" className="authenticationBtn">
 													Save
 												</button>
 											</div>
@@ -153,20 +156,9 @@ function ProfileScreen() {
 					</div>
 				</div>
 				<hr />
-				{/* <button className="followbtn">Add image</button> */}
+
 				<AddPost />
-				{/* <div className="row">
-					<div className="col-md-4">1</div>
-					<div className="col-md-4">
-						<div
-							className="post_section p-2"
-							style={{ top: "-40px", position: "relative" }}
-						>
-							<Post post={posts} />
-						</div>
-					</div>
-					<div className="col-md-4">3</div>
-				</div> */}
+
 				<div className="row">
 					<div className="col-md-3 col-0">1</div>
 					<div className="col-md-3 col-12">
