@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const dbUrl = process.env.dbUrl || "mongodb://localhost:27017/social_media_web";
+const dbUrl =
+	process.env.MONGO_URL || "mongodb://localhost:27017/social_media_web";
 mongoose.set("strictQuery", true);
 
 module.exports.connect = async () => {
