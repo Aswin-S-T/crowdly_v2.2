@@ -1,5 +1,6 @@
 const User = require("../../models/users/userSchema");
 const bcrypt = require("bcrypt");
+let { objectId } = require("mongoose");
 
 const jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET || "something secret";
@@ -79,6 +80,18 @@ module.exports = {
 			} else {
 				resolve(errorResponse);
 			}
+		});
+	},
+	getAllUsers: () => {
+		return new Promise(async (resolve, reject) => {
+			await User.find().then((result) => {
+				if (result) {
+					successResponse.data = result;
+					resolve(successResponse);
+				} else {
+					resolve(errorResponse);
+				}
+			});
 		});
 	},
 };

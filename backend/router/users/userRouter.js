@@ -7,6 +7,7 @@ const {
 	register,
 	login,
 	getDetails,
+	getAllUsers,
 } = require("../../controllers/users/userController");
 const data = require("../../data");
 const { verifyToken } = require("../../middlewares/auth");
@@ -81,6 +82,13 @@ userRouter.get("/my-post/:id", async (req, res) => {
 
 userRouter.get("/details/:id", async (req, res) => {
 	getDetails(req.params.id).then((response) => {
+		res.send(response);
+	});
+});
+
+userRouter.get("/all-users", async (req, res) => {
+	let currentUserId = req.params.id;
+	getAllUsers().then((response) => {
 		res.send(response);
 	});
 });
