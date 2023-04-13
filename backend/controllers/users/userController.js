@@ -70,4 +70,15 @@ module.exports = {
 			resolve(errorResponse);
 		});
 	},
+	getDetails: (userId) => {
+		return new Promise(async (resolve, reject) => {
+			let userDetails = await User.findOne({ _id: userId });
+			if (userDetails) {
+				successResponse.data = userDetails;
+				resolve(successResponse);
+			} else {
+				resolve(errorResponse);
+			}
+		});
+	},
 };

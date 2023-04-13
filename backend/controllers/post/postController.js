@@ -26,4 +26,16 @@ module.exports = {
 			});
 		});
 	},
+	getMyPost: (userId) => {
+		return new Promise(async (resolve, reject) => {
+			await Post.find({ userId }).then((result) => {
+				if (result) {
+					successResponse.data = result;
+					resolve(successResponse);
+				} else {
+					resolve(errorResponse);
+				}
+			});
+		});
+	},
 };
