@@ -1,3 +1,4 @@
+const { response } = require("express");
 const express = require("express");
 const {
 	getAllPost,
@@ -8,6 +9,7 @@ const {
 	login,
 	getDetails,
 	getAllUsers,
+	sendFollowRequest,
 } = require("../../controllers/users/userController");
 const data = require("../../data");
 const { verifyToken } = require("../../middlewares/auth");
@@ -89,6 +91,13 @@ userRouter.get("/details/:id", async (req, res) => {
 userRouter.get("/all-users", async (req, res) => {
 	let currentUserId = req.params.id;
 	getAllUsers().then((response) => {
+		res.send(response);
+	});
+});
+
+userRouter.post("/follow", async (req, res) => {
+	let data = req.body;
+	sendFollowRequest(data).then((response) => {
 		res.send(response);
 	});
 });

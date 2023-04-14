@@ -10,8 +10,8 @@ const userSchema = new mongoose.Schema(
 		password: { type: String, required: true },
 		token: { type: String, required: true },
 		isPrivateAccount: { type: Boolean, default: false },
-		follower: { type: Number, default: 0 },
-		following: { type: Number, default: 0 },
+		followers: [],
+		following: [],
 		profileImage: { type: String },
 	},
 	{

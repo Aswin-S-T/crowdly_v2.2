@@ -94,4 +94,19 @@ module.exports = {
 			});
 		});
 	},
+	sendFollowRequest: (data) => {
+		return new Promise(async (resolve, reject) => {
+			await User.updateOne(
+				{ _id: data.fromId },
+				{ $push: { following: data.toId } }
+			).then((result) => {
+				if (result) {
+					successResponse.data = result;
+					resolve(successResponse);
+				} else {
+					resolve(errorResponse);
+				}
+			});
+		});
+	},
 };
